@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
 function Cell(props){
+    console.log(props.value)
     const [status, setStatus]= useState(props.value)
-    let position = [props.data.x, props.data.y]
+    let position = [props.x, props.y]
     const history=[]
     let theme='white'
     
