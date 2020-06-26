@@ -11,6 +11,7 @@ function Grid() {
     const [generation, setGeneration] = useState(0)
     const { grid, setGrid } = useContext(GridContext)
     const [running, setRunning] = useState(false)
+    //check into chakra and tailwind
 
     //Helper functions
     function create2DArray(size) {
