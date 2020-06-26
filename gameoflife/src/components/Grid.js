@@ -46,7 +46,7 @@ function Grid() {
         sum -= grid[x][y]
         return sum
     }
-    // console.table(grid)
+    // console.table(grid) just an edit to test deploy
     //SIMULATION
     //this will make it so a function dosent run multiple times. we just want one simulation up
     const runningRef = useRef(running)
