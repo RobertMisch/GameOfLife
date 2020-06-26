@@ -203,7 +203,7 @@ function Grid() {
                         else { clearGame() }
                     }}>clear game</button>
 
-                    <button onClick={()=>{if (running) { return } saveArray()}}>Save Array</button>
+                    <button onClick={()=>{if (running) { return } saveArray()}}>Save Template</button>
                 </div>
                 <div style={{display:'flex'}}>
                     <button onClick={() => { if (running) { return } changeSize(-5) }}>-5</button>
@@ -247,6 +247,17 @@ function Grid() {
                             }></div>
                         }))
                     })}
+                </div>
+                <div>
+                    <p>ABOUT</p>
+                    <p>Rules of the game</p>
+                    <ol>
+                        <li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+                        <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+                        <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+                        <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+                    </ol>
+                    <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Click here for more info!</a>
                 </div>
             </div>
         )
